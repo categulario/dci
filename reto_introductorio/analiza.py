@@ -10,13 +10,13 @@ if __name__ == '__main__':
 
         for line in datafile:
             pieces = line.strip().split(',')
-            dia = pieces[3]
-            hora = pieces[5]
-            sentido = pieces[4]
+            day = pieces[3]
+            hour = pieces[5]
+            direction = pieces[4]
 
             days[pieces[3]] += 1
-            hours['{}:{}'.format(dia, hora)] += 1
-            directions[sentido] += 1
+            hours['{}:{}'.format(day, hour)] += 1
+            directions[direction] += 1
 
 
     day, dcount = max(days.items(), key=lambda x:x[1])
