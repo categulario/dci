@@ -32,7 +32,6 @@ if __name__ == '__main__':
                 whours['{}:{}'.format(day, hour)] += weight
                 wdirections[direction] += weight
 
-
     day, dcount = max(days.items(), key=lambda x:x[1])
     hour, hcount = max(filter(lambda x:x[0].startswith('5:'), hours.items()), key=lambda x:x[1])
     direction, rcount = max(directions.items(), key=lambda x:x[1])
