@@ -54,7 +54,7 @@ if __name__ == '__main__':
     day, dcount = max(wdays.items(), key=lambda x:x[1])
     hour, hcount = max(filter(lambda x:x[0].startswith('5:'), whours.items()), key=lambda x:x[1])
     direction, rcount = max(wdirections.items(), key=lambda x:x[1])
-    
+
     print("El día con más peso es {} con {} toneladas en suma".format(day, dcount))
     print('de ese día, las {} es la hora más pesada'.format(hour.split(':')[1]))
     print('El sentido {} es el más ocupado'.format(direction))
